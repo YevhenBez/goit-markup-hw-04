@@ -10,6 +10,9 @@
     --primary-white-color: #F5F5F5;
     --overlay-hero: rgba(47, 48, 58, 0.4);
     --icon-feature: #F5F4FA;
+    --icon-staff: #AFB1B8;
+    --icon-bg-hover: #2196F3;
+    --icon-accent: #FFFFFF;
 }
 
 h1,
@@ -284,7 +287,7 @@ ul {
 
 .staff-demyanenko,
 .staff-tarasov {
-    padding: 30px 69px;
+    padding: 30px 69px 0px;
 }
 
 .staff-repina,
@@ -309,6 +312,39 @@ ul {
     line-height: 1.19;
 }
 
+.list-icon {
+    display: flex;
+    gap: 10px;
+    padding: 16px 32px 30px;
+}
+
+.staff-icon {
+    fill: var(--icon-staff);
+}
+
+.link-icon {
+    width: 44px;
+    height: 44px;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.link-icon:hover {
+    /* width: 44px;
+    height: 44px; */
+    background-color: var(--icon-bg-hover);
+    /* border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center; */
+}
+
+.link-icon:hover .staff-icon {
+    fill: var(--icon-accent);
+}
 
 /* Button */
 
