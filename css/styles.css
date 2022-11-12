@@ -501,3 +501,30 @@ ul {
     font-size: 14px;
     line-height: 1.71;
 }
+
+.footer-title {
+    color: var(--icon-accent);
+    
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+}
+
+.footer-link-icon {
+    width: 44px;
+    height: 44px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-icon {
+    fill: var(--icon-accent);
+}
+
+.footer-link-icon:hover {
+    background-color: var(--icon-bg-hover);
+}
+
