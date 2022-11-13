@@ -146,11 +146,35 @@ ul {
     text-decoration: none;
 }
 
+.header-mail,
+.header-tel {
+    fill: var(--primary-text-color);
+}
+
 .contacts-list a:hover,
 .contacts-list a:focus,
 .contacts-list a:active {
     color: var(--accent-color);
     outline: none;
+}
+
+.item {
+    display: flex;
+}
+
+.header-link-mail,
+.header-link-tel {
+    margin-right: 10px;
+}
+
+.contacts-list a:hover .header-mail,
+.contacts-list a:hover .header-tel {
+    fill: currentColor;
+}
+
+.contacts-list a:focus .header-mail,
+.contacts-list a:focus .header-tel {
+    fill: currentColor;
 }
 
 /* Hero */
