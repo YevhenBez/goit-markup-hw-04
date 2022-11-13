@@ -149,6 +149,7 @@ ul {
 .header-mail,
 .header-tel {
     fill: var(--primary-text-color);
+    margin-right: 10px;
 }
 
 .contacts-list a:hover,
@@ -156,15 +157,6 @@ ul {
 .contacts-list a:active {
     color: var(--accent-color);
     outline: none;
-}
-
-.item {
-    display: flex;
-}
-
-.header-link-mail,
-.header-link-tel {
-    margin-right: 10px;
 }
 
 .contacts-list a:hover .header-mail,
@@ -471,7 +463,6 @@ ul {
 
 .filter-title {
     margin-bottom: 4px;
-    /* padding-top: 20px; */
     color: var(--title-text-color);
 
     font-size: 18px;
