@@ -116,6 +116,7 @@ ul {
 .site-nav a:focus,
 .site-nav a:active {
     color: var(--accent-color);
+    outline: none;
 }
 
 .site-nav .link-current {
@@ -149,6 +150,7 @@ ul {
 .contacts-list a:focus,
 .contacts-list a:active {
     color: var(--accent-color);
+    outline: none;
 }
 
 /* Hero */
@@ -332,11 +334,17 @@ ul {
     justify-content: center;
 }
 
-.link-icon:hover {
+.link-icon:hover,
+.link-icon:focus {
     background-color: var(--icon-bg-hover);
+    outline: none;
 }
 
 .link-icon:hover .staff-icon {
+    fill: var(--icon-accent);
+}
+
+.link-icon:focus .staff-icon {
     fill: var(--icon-accent);
 }
 
@@ -366,8 +374,10 @@ ul {
     
 }
 
-.clients-link:hover {
+.clients-link:hover,
+.clients-link:focus {
     border: 1px solid var(--accent-color);
+    outline: none;
 }
 
 .clients-icon {
@@ -375,6 +385,10 @@ ul {
 }
 
 .clients-link:hover .clients-icon {
+    fill: var(--accent-color);
+}
+
+.clients-link:focus .clients-icon {
     fill: var(--accent-color);
 }
 
@@ -402,6 +416,7 @@ ul {
 .hero-button {
     color: var(--button-accent-color);
     background-color: var(--accent-color);
+    outline: none;
 }
 
 .button-all {
@@ -471,6 +486,15 @@ ul {
     background-color: var(--hero-bg-color);
 }
 
+.footer-container {
+    display: flex;
+    align-items: baseline;
+}
+
+.footer-contacts {
+    margin-right: 70px;
+}
+
 .logo-footer {
     display: block;
     margin-bottom: 20px;
@@ -508,6 +532,12 @@ ul {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
+    margin-bottom: 20px;
+}
+
+.footer-list-icon {
+    display: flex;
+    gap: 10px;
 }
 
 .footer-link-icon {
@@ -524,7 +554,9 @@ ul {
     fill: var(--icon-accent);
 }
 
-.footer-link-icon:hover {
+.footer-link-icon:hover,
+.footer-link-icon:focus {
     background-color: var(--icon-bg-hover);
+    outline: none;
 }
 
