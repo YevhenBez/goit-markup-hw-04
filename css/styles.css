@@ -133,7 +133,8 @@ ul {
 }
 
 .contacts-list a {
-    display: block;
+    display: flex;
+    align-items: center;
     padding-top: 32px;
     padding-bottom: 32px;
     color: var(--primary-text-color);
@@ -173,7 +174,6 @@ ul {
 
 .hero {
     max-width: 1600px;
-    height: 600px;
     margin-left: auto;
     margin-right: auto;
     background-image: linear-gradient(
@@ -289,11 +289,12 @@ ul {
 
 .staff {
     display: flex;
+    gap: 30px;
 }
 
-.staff .item+.item {
+/* .staff .item+.item {
     margin-left: 30px;
-}
+} */
 
 .staff .item {
     background: #FFFFFF;
@@ -303,14 +304,15 @@ ul {
     text-align: center;
 }
 
-.staff-demyanenko,
+/* .staff-demyanenko,
 .staff-tarasov {
-    padding: 30px 69px 0px;
-}
-
+    padding: 30px 0px;
+} */
+.staff-demyanenko,
+.staff-tarasov,
 .staff-repina,
 .staff-ermakov {
-    padding: 30px 61px 0px;
+    padding: 30px 0px;
 }
 
 .staff .staff-title {
@@ -328,12 +330,13 @@ ul {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.19;
+    margin-bottom: 16px;
 }
 
 .list-icon {
     display: flex;
     gap: 10px;
-    padding: 16px 32px 30px;
+    justify-content: center;
 }
 
 .staff-icon {
@@ -558,7 +561,7 @@ ul {
 
 .footer-title {
     color: var(--icon-accent);
-    
+    font-family: Roboto;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
